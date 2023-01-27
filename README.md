@@ -16,6 +16,6 @@ qemu-img convert -O qcow2 /dev/hda /path/to/dir/hda.qcow2
 
 sudo VBoxManage clonehd input.vhd output.img --format RAW
 
-VBoxManage convertfromraw myfile.dd myfile.vhd --format VHD
+VBoxManage convertfromraw myfile.raw myfile.vhd --format VHD
 
 VDI|VMDK|VHD|RAW|<other>
