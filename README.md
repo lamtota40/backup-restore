@@ -1,7 +1,7 @@
 # backup-restore
 backup and restore
 
-# DD Backup/Restore with compress
+# Backup/Restore with compress
 - install <br>
 ```console
 sudo apt-get install gzip -y
