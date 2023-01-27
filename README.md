@@ -30,7 +30,7 @@ VBoxManage convertfromraw myfile.raw myfile.vhd --format VHD
 sudo apt install qemu-utils -y
 ```
 - Format option input <br>
-```VHD```/```VMDK```/```QCOW2```/```RAW```/```VHDX```/```QCOW```/```VDI```and```QED```
+```VHD```/```VMDK```/```QCOW2```/```RAW```/```VHDX```/```QCOW```/```VDI```/```QED```
 - Format option output <br>
 ```qcow```/```qcow2```
 - Example Command <br>
