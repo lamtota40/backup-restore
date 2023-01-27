@@ -40,6 +40,4 @@ sudo apt install qemu-utils -y
 qemu-img convert -O qcow2 /path/to/dir/hda.raw /path/to/dir/hda.qcow2
 
 qemu-img convert -O qcow2 /dev/hda /path/to/dir/hda.qcow2
-![IMG_20230127_182314](https://user-images.githubusercontent.com/26719371/215075641-bdefc560-469f-43c9-9d8d-845f56d1531b.jpg)
-
 ![IMG_20230127_192602](https://user-images.githubusercontent.com/26719371/215086857-4c76bcf4-e5b9-4692-9dab-272a457bb909.jpg)
