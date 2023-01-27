@@ -7,10 +7,13 @@ backup and restore
 sudo apt-get install gzip -y
 ```
 - Backup <br>
+```console
 dd if=/dev/sdX | gzip -c > path/to/your-backup.img.gz
+```
 - Restore <br>
+```console
 gunzip -c /path/to/your-backup.img.gz | dd of=/dev/sdX
-
+```
 
 sudo dd if=openSUSE-Leap-15.1-DVD-x86_64.iso of=/dev/sdc bs=4M status=progress
 
