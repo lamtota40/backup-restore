@@ -27,11 +27,14 @@ sudo VBoxManage clonehd input.vhd output.img --format RAW
 sudo apt install virtualbox-ext-pack -y
 - Format option <br>
 VDI|VMDK|VHD|RAW|other
-- Command <br>
+- Example Command <br>
 VBoxManage convertfromraw myfile.raw myfile.vhd --format VHD
 
 # Convert with Qemu
+- Install <br>
 sudo apt install qemu-utils -y
-
-
+- Format option <br>
+test
+- Example Command <br>
+tes
 
