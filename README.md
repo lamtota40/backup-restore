@@ -26,8 +26,9 @@ sudo apt install virtualbox-ext-pack -y
 - Format option <br>
 ```VDI```/```VMDK```/```VHD```/```RAW```/other
 - Example Command <br>
+```console
 VBoxManage convertfromraw myfile.raw myfile.vhd --format VHD
-
+```
 # Convert with Qemu
 - Install <br>
 ```console
