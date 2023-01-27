@@ -1,8 +1,6 @@
 # backup-restore
 backup and restore
 
-sudo apt install qemu-utils virtualbox-ext-pack -y
-
 # Backup/Restore with compress
 - install <br>
 sudo apt-get install gzip -y
@@ -24,12 +22,16 @@ qemu-img convert -O qcow2 /dev/hda /path/to/dir/hda.qcow2
 
 
 sudo VBoxManage clonehd input.vhd output.img --format RAW
-# Convert
+# Convert with VirtualBox
 - Install <br>
 sudo apt install virtualbox-ext-pack -y
 - Format option <br>
 VDI|VMDK|VHD|RAW|other
 - Command <br>
 VBoxManage convertfromraw myfile.raw myfile.vhd --format VHD
+
+# Convert with Qemu
+sudo apt install qemu-utils -y
+
 
 
