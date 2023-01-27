@@ -18,7 +18,9 @@ dd if=/dev/hda of=/path/to/dir/hda.raw
 sudo VBoxManage clonehd input.vhd output.img --format RAW
 # Convert with VirtualBox
 - Install <br>
+```console
 sudo apt install virtualbox-ext-pack -y
+```
 - Format option <br>
 ```VDI```/```VMDK```/```VHD```/```RAW```/other
 - Example Command <br>
