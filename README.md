@@ -25,8 +25,11 @@ qemu-img convert -O qcow2 /dev/hda /path/to/dir/hda.qcow2
 
 sudo VBoxManage clonehd input.vhd output.img --format RAW
 # Convert
-- install <br>
+- Install <br>
 sudo apt install virtualbox-ext-pack -y
+- Format option <br>
+VDI|VMDK|VHD|RAW|other
+- Command <br>
 VBoxManage convertfromraw myfile.raw myfile.vhd --format VHD
 
-VDI|VMDK|VHD|RAW|<other>
+
