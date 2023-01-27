@@ -3,6 +3,9 @@ backup and restore
 
 sudo apt install qemu-utils virtualbox-ext-pack -y
 
+# backup with compress
+dd if=/dev/sdX | gzip -c > path/to/your-backup.img.gz
+
 sudo dd if=openSUSE-Leap-15.1-DVD-x86_64.iso of=/dev/sdc bs=4M status=progress
 
 dd if=/dev/hda of=/path/to/dir/hda.raw
