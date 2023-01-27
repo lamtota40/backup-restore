@@ -4,7 +4,7 @@ backup and restore
 sudo apt install qemu-utils virtualbox-ext-pack -y
 
 # Backup/Restore with compress
-- Backup
+- Backup <\ br>
 dd if=/dev/sdX | gzip -c > path/to/your-backup.img.gz
 - Restore
 gunzip -c /path/to/your-backup.img.gz | dd of=/dev/sdX
