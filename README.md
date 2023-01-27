@@ -1,9 +1,11 @@
 # backup-restore
 backup and restore
 
-# Backup/Restore with compress
+# DD Backup/Restore with compress
 - install <br>
+```console
 sudo apt-get install gzip -y
+```
 - Backup <br>
 dd if=/dev/sdX | gzip -c > path/to/your-backup.img.gz
 - Restore <br>
