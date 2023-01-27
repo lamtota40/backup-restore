@@ -27,7 +27,8 @@ VBoxManage convertfromraw myfile.raw myfile.vhd --format VHD
 # Convert with Qemu
 - Install <br>
 ```console
-sudo apt install qemu-utils -y```
+sudo apt install qemu-utils -y
+```
 - Format option <br>
 ```qcow```/```qcow2```
 - Example Command <br>
