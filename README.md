@@ -29,7 +29,9 @@ VBoxManage convertfromraw myfile.raw myfile.vhd --format VHD
 ```console
 sudo apt install qemu-utils -y
 ```
-- Format option <br>
+- Format option input <br>
+```VHD```/```VMDK```/```QCOW2```/```RAW```/```VHDX```/```QCOW```/```VDI```and```QED.
+- Format option output <br>
 ```qcow```/```qcow2```
 - Example Command <br>
 qemu-img convert -O qcow2 /path/to/dir/hda.raw /path/to/dir/hda.qcow2
