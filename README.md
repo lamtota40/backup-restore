@@ -2,7 +2,7 @@
 backup and restore
 - From partition to img/raw <br>
 ```console
-dd if=/dev/hda of=/path/to/dir/hda.raw
+sudo dd if=/dev/hda of=/path/to/dir/hda.raw
 ```
 - From ISO(CD) to flashdrive <br>
 ```console
@@ -15,11 +15,11 @@ sudo apt-get install gzip -y
 ```
 - Backup <br>
 ```console
-dd if=/dev/sdX | gzip -c > path/to/your-backup.img.gz
+sudo dd if=/dev/sdX | gzip -c > path/to/your-backup.img.gz
 ```
 - Restore <br>
 ```console
-gunzip -c /path/to/your-backup.img.gz | dd of=/dev/sdX
+sudo gunzip -c /path/to/your-backup.img.gz | dd of=/dev/sdX
 ```
 
 sudo VBoxManage clonehd input.vhd output.img --format RAW
@@ -32,7 +32,7 @@ sudo apt install virtualbox-ext-pack -y
 ```VDI```/```VMDK```/```VHD```/```RAW```/other
 - Example Command <br>
 ```console
-VBoxManage convertfromraw myfile.raw myfile.vhd --format VHD
+sudo VBoxManage convertfromraw myfile.raw myfile.vhd --format VHD
 ```
 # Convert with Qemu
 - Install <br>
@@ -44,11 +44,11 @@ sudo apt install qemu-utils -y
 
 - To convert vhd to qcow2:
 ```console
-qemu-img convert -p -f vpc -O qcow2 windowsdata.vhd windowsdata.qcow2
+sudo qemu-img convert -p -f vpc -O qcow2 windowsdata.vhd windowsdata.qcow2
 ```
 - To convert raw to qcow2:
 ```console
-qemu-img convert -f raw -O qcow2 vm_hdd.img vm_hdd.qcow2
+sudo qemu-img convert -f raw -O qcow2 vm_hdd.img vm_hdd.qcow2
 ```
 qemu-img convert -O qcow2 /path/to/dir/hda.raw /path/to/dir/hda.qcow2
 
