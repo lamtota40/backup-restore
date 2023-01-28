@@ -1,12 +1,16 @@
 # backup-restore
 backup and restore
+- From partition to partition <br>
+```console
+sudo dd if=/dev/sda2 of=/dev/sda3 bs=1M status=progress
+```
 - From partition to img/raw <br>
 ```console
-sudo dd if=/dev/hda of=/path/to/dir/hda.raw
+sudo dd if=/dev/hda of=/path/to/dir/hda.raw bs=1M status=progress
 ```
 - From ISO(CD) to flashdrive <br>
 ```console
-sudo dd if=openSUSE-Leap-15.1-DVD-x86_64.iso of=/dev/sdc bs=4M status=progress
+sudo dd if=openSUSE-Leap-15.1-DVD-x86_64.iso of=/dev/sdc bs=1M status=progress
 ```
 # Backup/Restore with compress
 - install <br>
