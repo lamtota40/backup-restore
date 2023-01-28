@@ -41,6 +41,7 @@ sudo apt install qemu-utils -y
 <img src="https://user-images.githubusercontent.com/26719371/215086857-4c76bcf4-e5b9-4692-9dab-272a457bb909.jpg" width="200">
 
 - Example Command <br>
+To convert vhd to qcow2:
 ```console
 qemu-img convert -p -f vpc -O qcow2 windowsdata.vhd windowsdata.qcow2
 ```
