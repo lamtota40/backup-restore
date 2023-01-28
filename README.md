@@ -46,7 +46,7 @@ qemu-img convert -p -f vpc -O qcow2 windowsdata.vhd windowsdata.qcow2
 ```
 - To convert raw to qcow2:
 ```console
-qemu-img convert
+qemu-img convert -f raw -O qcow2 vm_hdd.img vm_hdd.qcow2
 ```
 qemu-img convert -O qcow2 /path/to/dir/hda.raw /path/to/dir/hda.qcow2
 
