@@ -1,8 +1,8 @@
 # backup-restore
 backup and restore
-
+```console
 sudo dd if=openSUSE-Leap-15.1-DVD-x86_64.iso of=/dev/sdc bs=4M status=progress
-
+```
 dd if=/dev/hda of=/path/to/dir/hda.raw
 
 # Backup/Restore with compress
