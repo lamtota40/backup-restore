@@ -60,7 +60,7 @@ sudo qemu-img convert -f raw -O qcow2 vm_hdd.img vm_hdd.qcow2
 ```
 - To convert qcow2 to raw:
 ```console
-qemu-img convert -f qcow2 -O raw /path/to/image.qcow2 /path/to/image.img
+sudo qemu-img convert -f qcow2 -O raw /path/to/image.qcow2 /path/to/image.img
 ```
 qemu-img convert -O qcow2 /path/to/dir/hda.raw /path/to/dir/hda.qcow2
 
