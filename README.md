@@ -22,7 +22,6 @@ sudo dd if=/dev/sdX | gzip -c > path/to/your-backup.img.gz
 sudo gunzip -c /path/to/your-backup.img.gz | dd of=/dev/sdX
 ```
 
-sudo VBoxManage clonehd input.vhd output.img --format RAW
 # Convert with VirtualBox
 - Install <br>
 ```console
@@ -30,9 +29,13 @@ sudo apt install virtualbox-ext-pack -y
 ```
 - Format option <br>
 ```VDI```/```VMDK```/```VHD```/```RAW```/other
-- Example Command <br>
+- Example Convert <br>
 ```console
 sudo VBoxManage convertfromraw myfile.raw myfile.vhd --format VHD
+```
+- Example Convert <br>
+```console
+sudo VBoxManage clonehd input.vhd output.img --format RAW
 ```
 This command duplicates a registered virtual hard disk image to a new image file with a new unique identifier (UUID).
 # Convert with Qemu
