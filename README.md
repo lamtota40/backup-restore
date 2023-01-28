@@ -33,7 +33,7 @@ sudo apt install virtualbox-ext-pack -y
 ```console
 sudo VBoxManage convertfromraw myfile.raw myfile.vhd --format VHD
 ```
-- Example Convert <br>
+- Example Cloning <br>
 ```console
 sudo VBoxManage clonehd input.vhd output.img --format RAW
 ```
