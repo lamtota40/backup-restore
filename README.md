@@ -34,6 +34,7 @@ sudo apt install virtualbox-ext-pack -y
 ```console
 sudo VBoxManage convertfromraw myfile.raw myfile.vhd --format VHD
 ```
+This command duplicates a registered virtual hard disk image to a new image file with a new unique identifier (UUID).
 # Convert with Qemu
 - Install <br>
 ```console
