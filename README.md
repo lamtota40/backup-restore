@@ -1,5 +1,6 @@
 # backup-restore
 backup and restore
+- From ISO(CD) to flashdrive <br>
 ```console
 sudo dd if=openSUSE-Leap-15.1-DVD-x86_64.iso of=/dev/sdc bs=4M status=progress
 ```
