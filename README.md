@@ -41,6 +41,10 @@ sudo apt install qemu-utils -y
 <img src="https://user-images.githubusercontent.com/26719371/215086857-4c76bcf4-e5b9-4692-9dab-272a457bb909.jpg" width="200">
 
 - Example Command <br>
+```console
+qemu-img convert -p -f vpc -O qcow2 windowsdata.vhd windowsdata.qcow2
+```
+
 qemu-img convert -O qcow2 /path/to/dir/hda.raw /path/to/dir/hda.qcow2
 
 qemu-img convert -O qcow2 /dev/hda /path/to/dir/hda.qcow2
