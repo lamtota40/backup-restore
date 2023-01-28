@@ -4,7 +4,7 @@ backup and restore
 ```console
 sudo dd if=/dev/sda2 of=/dev/sda3 bs=1M status=progress
 ```
-- From partition to img/raw <br>
+- From partition to raw(img) <br>
 ```console
 sudo dd if=/dev/hda of=/path/to/dir/hda.raw bs=1M status=progress
 ```
@@ -54,11 +54,11 @@ sudo apt install qemu-utils -y
 ```console
 sudo qemu-img convert -p -f vpc -O qcow2 windowsdata.vhd windowsdata.qcow2
 ```
-- To convert raw to qcow2:
+- To convert raw(img) to qcow2:
 ```console
 sudo qemu-img convert -f raw -O qcow2 vm_hdd.img vm_hdd.qcow2
 ```
-- To convert qcow2 to raw:
+- To convert qcow2 to raw(img):
 ```console
 sudo qemu-img convert -f qcow2 -O raw /path/to/image.qcow2 /path/to/image.img
 ```
