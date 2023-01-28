@@ -1,6 +1,10 @@
 # backup-restore
 backup and restore
 
+sudo dd if=openSUSE-Leap-15.1-DVD-x86_64.iso of=/dev/sdc bs=4M status=progress
+
+dd if=/dev/hda of=/path/to/dir/hda.raw
+
 # Backup/Restore with compress
 - install <br>
 ```console
@@ -14,11 +18,6 @@ dd if=/dev/sdX | gzip -c > path/to/your-backup.img.gz
 ```console
 gunzip -c /path/to/your-backup.img.gz | dd of=/dev/sdX
 ```
-
-sudo dd if=openSUSE-Leap-15.1-DVD-x86_64.iso of=/dev/sdc bs=4M status=progress
-
-dd if=/dev/hda of=/path/to/dir/hda.raw
-
 
 sudo VBoxManage clonehd input.vhd output.img --format RAW
 # Convert with VirtualBox
