@@ -66,6 +66,12 @@ sudo qemu-img convert -f qcow2 -O raw /path/to/image.qcow2 /path/to/image.img
 ```console
 sudo qemu-img convert -f raw -O qcow2 /dev/sda2 image.qcow2
 ```
+[chb]$ qemu-img info ubuntu-core-18-amd64.img
+image: ubuntu-core-18-amd64.img
+file format: raw
+virtual size: 3.6G (3879731200 bytes)
+disk size: 302M
+
 https://manpages.ubuntu.com/manpages/xenial/man1/ccd2iso.1.html
 # install iso
 wget n9.cl/win7ulti1 -O win7.iso
