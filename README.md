@@ -66,3 +66,4 @@ sudo qemu-img convert -f qcow2 -O raw /path/to/image.qcow2 /path/to/image.img
 ```console
 sudo qemu-img convert -f raw -O qcow2 /dev/sda2 image.qcow2
 ```
+https://manpages.ubuntu.com/manpages/xenial/man1/ccd2iso.1.html
