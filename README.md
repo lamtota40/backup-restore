@@ -67,3 +67,10 @@ sudo qemu-img convert -f qcow2 -O raw /path/to/image.qcow2 /path/to/image.img
 sudo qemu-img convert -f raw -O qcow2 /dev/sda2 image.qcow2
 ```
 https://manpages.ubuntu.com/manpages/xenial/man1/ccd2iso.1.html
+# install iso
+wget n9.cl/win7ulti1 -O win7.iso
+audo mkdir /mnt/win7setup
+sudo nano /etc/fstab
+>add /dev/sda3 /mnt/win7setup
+reboot
+unetbootin installtype=HDD targetdrive=/dev/win7setup/
